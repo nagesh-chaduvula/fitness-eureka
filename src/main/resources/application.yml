@@ -1,0 +1,15 @@
+# default port 8761
+server:
+  port: 8761
+
+spring:
+  application:
+    name: fitness-eureka
+
+# To do not register with Eureka himself with Eureka server (by default ?true?).
+# Other services will register with Eureka server.
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
